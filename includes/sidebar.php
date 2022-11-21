@@ -1,3 +1,5 @@
+<div >
+
 <div class="row">
 	<div class="box box-solid">
 	  	<div class="box-header with-border">
@@ -54,4 +56,5 @@
 	    	<a class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
 	  	</div>
 	</div>
+</div>
 </div>

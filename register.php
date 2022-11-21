@@ -42,7 +42,7 @@
 			$stmt->execute(['email'=>$email]);
 			$row = $stmt->fetch();
 			if($row['numrows'] > 0){
-				$_SESSION['error'] = 'Email already taken';
+				$_SESSION['error'] = 'Adresse e-mail déjà utilisée';
 				header('location: signup.php');
 			}
 			else{
@@ -59,11 +59,11 @@
 					$userid = $conn->lastInsertId();
 
 					$message = "
-						<h2>Thank you for Registering.</h2>
-						<p>Your Account:</p>
+						<h2>Merci de votre inscription.</h2>
+						<p>votre compte:</p>
 						<p>Email: ".$email."</p>
-						<p>Password: ".$_POST['password']."</p>
-						<p>Please click the link below to activate your account.</p>
+						<p>mot de passe: ".$_POST['password']."</p>
+						<p>Veuillez cliquer sur le lien ci-dessous pour activer votre compte.</p>
 						<a href='http://localhost/ecommerce/activate.php?code=".$code."&user=".$userid."'>Activate Account</a>
 					";
 
@@ -129,7 +129,7 @@
 
 	}
 	else{
-		$_SESSION['error'] = 'Fill up signup form first';
+		$_SESSION['error'] = 'Remplissez d abord le formulaire d inscription';
 		header('location: signup.php');
 	}
 

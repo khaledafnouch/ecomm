@@ -12,17 +12,17 @@
 	      <section class="content">
 	        <div class="row">
 	        	<div class="col-sm-9">
-	        		<h1 class="page-header">YOUR CART</h1>
+	        		<h1 class="page-header">VOTRE PANIER</h1>
 	        		<div class="box box-solid">
 	        			<div class="box-body">
 		        		<table class="table table-bordered">
 		        			<thead>
 		        				<th></th>
 		        				<th>Photo</th>
-		        				<th>Name</th>
-		        				<th>Price</th>
-		        				<th width="20%">Quantity</th>
-		        				<th>Subtotal</th>
+		        				<th>Nom</th>
+		        				<th>Prix</th>
+		        				<th width="20%">Quantité</th>
+		        				<th>Total</th>
 		        			</thead>
 		        			<tbody id="tbody">
 		        			</tbody>
@@ -37,7 +37,7 @@
 	        			}
 	        			else{
 	        				echo "
-	        					<h4>You need to <a href='login.php'>Login</a> to checkout.</h4>
+	        					<h4>Vous devez<a href='login.php'>Login</a> to checkout.</h4>
 	        				";
 	        			}
 	        		?>
